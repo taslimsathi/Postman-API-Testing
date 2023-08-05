@@ -1,0 +1,21 @@
+Command::
+
+npm Install:
+npm install -g newman
+npm install newman-reporter-htmlnpm install newman-reporter-html
+npm install -g newman-reporter-htmlextra
+
+Newman Version Check: npm -v
+
+Sample Command:
+
+newman run Customer.postman_collection.json -e X1.postman_environment.json
+
+Report generate:
+
+newman run Customer.postman_collection.json -e X1.postman_environment.json -r cli,html
+
+Another report layout:
+
+newman run Customer.postman_collection.json -e X1.postman_environment.json -r cli,htmlextra
+newman
